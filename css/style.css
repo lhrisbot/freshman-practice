@@ -1,4 +1,21 @@
+.column-four-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 水平居中 */
+}
 
+.column-four-img {
+  flex-basis: calc(33.333% - 20px); /* 每个图片容器占据1/3的空间，减去间距 */
+  margin: 10px; /* 图片之间的间距 */
+  text-align: center; /* 确保图片在各自的容器内水平居中 */
+}
+
+.column-four-img img {
+  max-width: 100%; /* 确保图片不会超出容器宽度 */
+  height: auto; /* 保持图片的宽高比 */
+  display: inline-block; /* 使图片在容器内垂直居中 */
+  vertical-align: middle; /* 使图片在容器内垂直居中 */
+}
 /* 角色介绍 */
 .role-card-wrapper{
     margin-bottom: 40px;
